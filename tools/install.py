@@ -135,7 +135,7 @@ def files(action):
       # GYP will output to lib.target except on OS X, this is hardcoded
       # in its source - see the _InstallableTargetInstallPath function.
       if sys.platform != 'darwin':
-        output_prefix += 'lib.target/'
+        output_prefix += 'lib/'
 
   if 'false' == variables.get('node_shared'):
     action([output_prefix + output_file], 'bin/' + output_file)
